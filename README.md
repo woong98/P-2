@@ -26,14 +26,15 @@
 우리는 웹 풀스택 스터디를 통해
 
 - 웹 동작 흐름
-- HTTP 통신
 - JavaScript를 통한 DOM 동작 방법
-- SPA
 - Express를 통한 서버 구축
 - MySQL을 통한 데이터베이스 구축
+- HTTP 통신
 - Socket 통신
 - Passport를 사용한 로그인
 - OAuth를 사용한 소셜 로그인
+- SPA
+- DB의 ORM , ERD 사용방법
 
 학습을 하여 성장할 계획입니다! 🔥 🔥
 
@@ -49,7 +50,7 @@
 
 ## 참고
 
-- [디자인 및 기획서]()
+- [디자인 및 기획서](https://www.figma.com/file/wE7fo8Nx7r2QFoRXG2zDqM/2022-Ajou-Beginner-Project-1-2?node-id=0%3A1)
 
 - [Figma 사용법](https://slash-amaranthus-65c.notion.site/Figma-c1dead5d929d44498e94641f8058e10d)
 
