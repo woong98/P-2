@@ -6,4 +6,4 @@ createMain();
 createDetail();
 createLogin();
 createReact();
-changeDisplay("react", "block");
+changeDisplay("main", "block");
