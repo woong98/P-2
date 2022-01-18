@@ -1,0 +1,50 @@
+@import "site_banner.css";
+@import "main.css";
+@import "detail.css";
+@import "login.css";
+
+html
+{
+    height : 100%;
+}
+body
+{
+    height : 100%;
+    margin : 0;
+}
+
+.rect-button
+{
+    border-color : black;
+    border-style: solid;
+}
+
+.react
+{
+    width : 60%;
+    height : 40%;
+    position : absolute;
+    left : 20%;
+    top : 30%;
+    border-style: solid;
+}
+
+.react-button__1
+{
+    width : 30%;
+    height : 20%;
+    position : absolute;
+    left : 10%;
+    top : 55%;
+    background-color: #0065b3;
+}
+
+.react-button__2
+{
+    width : 30%;
+    height : 20%;
+    position : absolute;
+    left : 60%;
+    top : 55%;
+    background-color: #0065b3;
+}

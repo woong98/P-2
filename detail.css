@@ -1,0 +1,47 @@
+.detail
+{
+    width : 100%;
+    height : 90%;
+    margin : 0;
+}
+.detail-box
+{
+    display : flex;
+    flex-direction: row;
+    width : 100%;
+    height : 40%;
+    border-style : solid;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-width: thin;
+}
+.detail-box:nth-child(2)
+{
+    height : 10%;
+}
+
+.detail-box:nth-child(3)
+{
+    height : 10%;
+}
+
+.detail-picture__back{
+
+}
+.detail-picture__forward{
+
+}
+.blank0{
+
+}
+.blank1{
+
+}
+.blank2{
+
+}
+.detail-detail__info{
+
+}
+
