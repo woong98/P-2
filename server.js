@@ -14,26 +14,26 @@ let con = mysql.createConnection(
       user:"nodejs",
       password: '545493',
       port : "3306",
-      database : "mongsite"
+      database : "ajou"
     }
   ); //데이터베이스 관련 connection 
 
 let app = express();
 
-app.use(express.static(__dirname));
-app.use(bodyParser.json());
+app.use(express.static(__dirname)); //경로 지정 방식을 변경 
+app.use(bodyParser.json()); //post방식에서 req.body에 접근하기 위해서 사용 
 app.get('/', function(req, res)
 {
-    res.sendFile(path.join(__dirname, '/mong.html'));
+    res.sendFile(path.join(__dirname, '/mong.html')); //기본적으로는 html파일을 페이지 최초접속시 전송함.
 });
 
-app.get('/free', function(req, res) //free형태의 url을 전달받은 경우에
+app.get('/main', function(req, res) //free형태의 url을 전달받은 경우에
 { 
     con.connect(function(err) //연결. 안의 function은 콜백함수 
     {
       if (err) throw err; //에러처리 
      //유효한 경우 
-     con.query("SELECT * FROM free", function(err, result, fields)
+     con.query("SELECT * FROM contents", function(err, result, fields)
      { //query문에서의 function에대한 정보를 찾아봐야 할 듯 
         if (err) throw err;
         console.log(result);
