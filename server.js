@@ -6,13 +6,13 @@ let mysql = require('mysql2');
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
-
+require("dotenv").config();
 
 let con = mysql.createConnection(
     {
-      host:"localhost",
-      user:"nodejs",
-      password: '545493',
+      host: process.env.DB_HOST,
+      user: process.env.DB_USER,
+      password: process.env.DB_PASS,
       port : "3306",
       database : "ajou"
     }
