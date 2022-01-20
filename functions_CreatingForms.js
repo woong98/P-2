@@ -7,10 +7,14 @@ function createMain() //기본게시판에 대한 생성
     
     //select를 위한 박스와 각 content 표시를 위한 박스를 생성
     const arr5 = [1,2,3,4,5];
+    const arr4 = [1, 2, 3, 4];
     const arr3 = ["main-box__image", "main-box__contents", "main-box__plus"];
     arr5.forEach(item => {
         let ele = createAndAdd("div", "main-box", main); //각 div element생성
-        arr3.forEach(item0 => createAndAdd("div", item0, ele));
+        createAndAdd("div", "main-box__image", ele);
+        let boxContents = createAndAdd("div", "main-box__contents", ele);
+        arr4.forEach(item => createAndAdd("div", "box__contents_para", boxContents));
+        createAndAdd("div", "main-box__plus", ele);
     });
 
     main.style.display = "none";

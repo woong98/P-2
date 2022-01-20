@@ -38,6 +38,8 @@
 
 .main-box__contents
 {
+    display : flex;
+    flex-direction: column;
     height : 100%;
     width : 50%;
 }
@@ -46,4 +48,9 @@
 {
     height : 100%;
     width : 25%;
+}
+
+.box__contents_para{
+    height : 25%;
+    width : 100%;
 }
