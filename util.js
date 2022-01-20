@@ -13,16 +13,22 @@ function createAndAdd(ele, clsname, pr, intext) //ele라는 tag를 생성 후, c
 function changeDisplay(class_name, display_option){ //class_name바탕 탐색을 통해서 해당 요소 display여부를 결정
     const seek = document.querySelector(`.${class_name}`);
     
-    if(seek.style.display == "none")
-    {
-        console.log(seek.style.display);
-        seek.style.display = display_option;
-        return;
-    }
-    else
-    {
-        seek.style.display = "none";
-    }
+    (seek.style.display == "none") ? (seek.style.display = display_option) : (seek.style.display = "none");
+    return;
 }
 
-export {createAndAdd, changeDisplay};
+function changeToE(kr)
+{
+    if(kr == "우만동") return "wooman";
+    else if(kr == "원천동") return "wonchun";
+    else if(kr == "광교") return "gwanggyo";
+}
+
+function changeToK(en)
+{
+    if(en == "wooman") return "우만동";
+    else if(en == "wonchun") return "원천동";
+    else if(en == "gwanggyo") return "광교";
+}
+
+export {createAndAdd, changeDisplay, changeToE, changeToK};

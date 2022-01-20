@@ -1,17 +1,17 @@
-import {createAndAdd, changeDisplay} from './functions_ Convenience.js';
+import {createAndAdd, changeDisplay} from './util.js';
 
 function createMain() //기본게시판에 대한 생성 
 {
     let main = createAndAdd("div", "main", document.body);
     let select = createAndAdd("div", "main-select", main);
-    
+    select.innerText = "우만동";
     //select를 위한 박스와 각 content 표시를 위한 박스를 생성
     const arr5 = [1,2,3,4,5];
     const arr4 = [1, 2, 3, 4];
     const arr3 = ["main-box__image", "main-box__contents", "main-box__plus"];
     arr5.forEach(item => {
         let ele = createAndAdd("div", "main-box", main); //각 div element생성
-        createAndAdd("div", "main-box__image", ele);
+        createAndAdd("img", "main-box__image", ele);
         let boxContents = createAndAdd("div", "main-box__contents", ele);
         arr4.forEach(item => createAndAdd("div", "box__contents_para", boxContents));
         createAndAdd("div", "main-box__plus", ele);
@@ -44,7 +44,7 @@ function createLogin()
     let login = createAndAdd("div", "login", document.body);
 
     const arr0 = ["login-id__form", "login-pw__form", 
-    "login-region__form"]
+    "login-region__form"];
     const arr1 = ["login-button__form1", "login-button__form2"];
 
     arr0.forEach(item => createAndAdd("input", item, login));
@@ -62,4 +62,14 @@ function createReact()
     react.style.display = "none";
 }
 
-export {createMain, createDetail, createLogin, createReact};
+function createSelectOption()
+{
+    let selectOption = createAndAdd("div", "select-option", document.body);
+    const strarr = ["우만동", "원천동", "광교"];
+    strarr.forEach(item => createAndAdd("div", "select-button", selectOption, item));
+    selectOption.style.display = "none";
+}
+
+
+
+export {createMain, createDetail, createLogin, createReact, createSelectOption};
