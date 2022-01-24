@@ -44,16 +44,18 @@ app.get('/main', function(req, res) //free형태의 url을 전달받은 경우�
 });
 
 
-app.post('/write', function(req, res) //free형태의 url을 전달받은 경우에
+app.post('/submit', function(req, res) //free형태의 url을 전달받은 경우에
 { 
   const keyNames = Object.keys(req.body);
   const values = req.body;
 
-  con.query(`INSERT INTO ${values.table}(${keyNames[1]}, ${keyNames[2]}, ${keyNames[3]}, ${keyNames[4]}) VALUE('${values.writer}', '${values.date}', '${values.title}', '${values.content}')`, function(err, result, fields)
+  con.query(`INSERT INTO members(${keyNames[0]}, ${keyNames[1]}, ${keyNames[2]}) VALUES('${values.id}', '${values.pw}', '${values.region}')`, function(err, result, fields)
   { //query문에서의 function에대한 정보를 찾아봐야 할 듯 
      if (err) throw err;
   })
 });
+
+
 
 
 app.listen(3000, function()

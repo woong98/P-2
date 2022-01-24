@@ -3,6 +3,7 @@
 @import "detail.css";
 @import "login.css";
 @import "select.css";
+@import "submit.css";
 
 html
 {
@@ -12,6 +13,11 @@ body
 {
     height : 100%;
     margin : 0;
+}
+
+.changed-page
+{
+    height : 100%;
 }
 
 .rect-button

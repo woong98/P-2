@@ -1,4 +1,4 @@
-import {createAndAdd, changeDisplay, changeToE} from './util.js';
+import {createAndAdd, changeDisplay, changeToE, setDisplayNone} from './util.js';
 
 function constituteMain(his)//게시물에 대한 모든 정보를 불러오고, 쓸 수 있도록 가공하는 기능을 가진 함수. 
 { 

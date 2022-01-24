@@ -1,0 +1,43 @@
+.submit{
+    text-align: center;
+    width : 100%;
+    height : 90%;
+    margin : 0;
+}
+
+.submit-id__form
+{
+    text-align: center;
+    width : 40%;
+    height : 15%;
+    position : absolute;
+    left : 30%;
+    top : 20%;
+}
+.submit-pw__form{
+    text-align: center;
+    width : 40%;
+    height : 15%;
+    position : absolute;
+    left : 30%;
+    top : 40%;
+}
+.submit-region__form{
+    text-align: center;
+    width : 40%;
+    height : 15%;
+    position : absolute;
+    left : 30%;
+    top : 60%;
+}
+.submit__form1{
+    color : white;
+    text-align: center;
+    vertical-align: middle;
+    width : 38%;
+    height : 8%;
+    position : absolute;
+    left : 31%;
+    top : 80%;
+    background-color: rgb(50, 50, 109);
+}

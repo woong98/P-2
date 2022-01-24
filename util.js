@@ -31,4 +31,11 @@ function changeToK(en)
     else if(en == "gwanggyo") return "광교";
 }
 
-export {createAndAdd, changeDisplay, changeToE, changeToK};
+function setDisplayNone()
+{
+    const displays = document.querySelector(".changed-page").childNodes;
+    displays.forEach(item => {item.style.display = "none"});
+} 
+
+
+export {createAndAdd, changeDisplay, changeToE, changeToK, setDisplayNone};
